@@ -10,8 +10,8 @@ class Command(BaseCommand):
     def add_arguments(self,parser):
         parser.add_argument('path', type=str)
 
-    def handle(self, *args, **kawrgs):
+    def handle(self, *args, **kwargs):
         path = kwargs['path']
-        df = pd.DataFrame(Squirrel.objects.all(),values())
+        df = pd.DataFrame(Squirrel.objects.all().values())
         df.to_csv(path)
 
