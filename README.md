@@ -31,28 +31,28 @@ A command allows users to export squirrels datas from the application to local w
 
 Visualize squirrels' spotted location on map. To not crash the application, only 100 of squirrels are viewed at one time. If wish to visualize more, source code will need to be changed.
 
-Located at: #/map#
+Located at: **/map**
 
 2. Sightings List
 
 A list with unique squirrel ID, spotted date and a link to unique squirrel sighting. Addtionally, an add button allows users to add a new squirrel record to the application.
 
-Located at: #/sightings/#
+Located at: **/sightings/**
 
 3. Unique Squirrel Sightings
 
 A webpage shows latitude, longitude, unique squirrel ID, shift, date and age for each squirrel. Users are allowed to change information regarding individual squirrels on corresponding webpage.
 
-Located at: #/sightings/<unique-squirrel-id>#
+Located at: **/sightings/<unique-squirrel-id>**
 
 4. Add Sightings
 
 A page with form allows users to add new squirrel records. Can be accessed through the button on Sightings List page.
 
-Located at: #/sightings/add#
+Located at: **/sightings/add**
 
 5. Stats
 
 Page with some general statistics reagrding the squirrel records.
 
-Located at: #/sightings/stats#
+Located at: **/sightings/stats**
