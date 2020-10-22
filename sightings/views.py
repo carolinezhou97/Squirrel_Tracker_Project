@@ -23,3 +23,19 @@ def add(request):
         form=SquirrelForm()
     context ={'form':form}
     return render(request,'sightings/add.html',context)
+
+def edit(request, squirrel_ID):
+    sighting = get_object_or_404(Squirrel, Unique_Squirrel_ID=squirrel_ID)
+    if request.method=='POST':
+        form=SquirrelForm(request.POST, instance=sighting)
+        if form.is_valid():
+            form.save()
+            return redirect(f'/sightings/{squirrel_ID}')
+    else:
+        form = SquirrelForm(instance=sighting)
+    context ={
+            'sighting':sighting,
+            'form':form
+    }
+    return render(request, 'sightings/edit.html', context)
+
