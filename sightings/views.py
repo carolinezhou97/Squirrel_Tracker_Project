@@ -51,16 +51,16 @@ def stats(request):
     eat = Squirrel.objects.filter(Eat=True).count()
 
     context = {
-            'Total_Squirrel' : total_squirrel,
-            'Shift_AM' : shift_am,
-            'Shift_PM' : Shift_pm,
-            'Age_Adult': age_adult,
-            'Age_Juvenile' : age_juvenile,
-            'Age_Unknown' : age_unknown,
-            'Running' : running,
-            'Climbing': climbing,
-            'Eating' : eating,
+            'total_squirrel' : total_squirrel,
+            'shift_am' : shift_am,
+            'shift_pm' : Shift_pm,
+            'age_adult': age_adult,
+            'age_juvenile' : age_juvenile,
+            'age_unknown' : age_unknown,
+            'running' : running,
+            'climbing': climbing,
+            'eating' : eating,
     }
-    return render(request, 'sightings/stats.html, context)
+    return render(request, 'sightings/stats.html', context)
 
 
