@@ -10,7 +10,7 @@ A squirrel tracking app that works with 2018 Central Park Squirrel Census data t
 * UNIs: [cz2628, ]
 
 ## Application Server
-35.231.254.213
+35.231.254.213/sightings/
 
 ## Application Features
 ### Management Commands
