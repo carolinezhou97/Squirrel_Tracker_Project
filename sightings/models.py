@@ -43,7 +43,7 @@ class Squirrel(models.Model):
     )
 
     ADULT = 'Adult'
-    JUVENILE = ' Juvenile'
+    JUVENILE = 'Juvenile'
     UNKNOWN = 'unknown'
 
     AGE_CHOICES = [

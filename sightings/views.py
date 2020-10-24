@@ -40,26 +40,26 @@ def edit(request, squirrel_ID):
     return render(request, 'sightings/edit.html', context)
 
 def stats(request):
-    total_squirrel = Squirrel.objects.all().count()
+    total_squirrel = Squirrel.objects.count()
     shift_am = Squirrel.objects.filter(Shift='AM').count()
     shift_pm = Squirrel.objects.filter(Shift='PM').count()
     age_adult = Squirrel.objects.filter(Age='Adult').count()
     age_juvenile = Squirrel.objects.filter(Age='Juvenile').count()
     age_unknown = Squirrel.objects.filter(Age='Unknown').count()
+    eating = Squirrel.objects.filter(Eating=True).count()
     running = Squirrel.objects.filter(Running=True).count()
     climbing = Squirrel.objects.filter(Climbing=True).count()
-    eat = Squirrel.objects.filter(Eat=True).count()
 
     context = {
             'total_squirrel' : total_squirrel,
             'shift_am' : shift_am,
-            'shift_pm' : Shift_pm,
+            'shift_pm' : shift_pm,
             'age_adult': age_adult,
-            'age_juvenile' : age_juvenile,
+            'age_juvenile': age_juvenile,
             'age_unknown' : age_unknown,
-            'running' : running,
-            'climbing': climbing,
             'eating' : eating,
+            'running' : running,
+            'climbing' : climbing,
     }
     return render(request, 'sightings/stats.html', context)
 

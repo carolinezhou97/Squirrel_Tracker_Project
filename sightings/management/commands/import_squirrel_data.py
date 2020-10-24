@@ -9,7 +9,7 @@ class Command(BaseCommand):
     help = 'Import squirrel data from custom path'
 
     def bool(self,arg):
-        if arg.lower() == 'True':
+        if arg.lower() == 'true':
             return True
         else:
             return False
