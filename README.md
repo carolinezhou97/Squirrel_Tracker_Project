@@ -6,8 +6,7 @@ A squirrel tracking app that works with 2018 Central Park Squirrel Census data t
 ## Project Group
 * Group Name: Struggling Coders
 * Section: 1
-* Members: Caroline Zhou, Serra Topal Ismail Oglou
-* UNIs: [cz2628, st3338 ]
+* Members: Caroline Zhou
 
 ## Application Server
 35.231.254.213/sightings/
